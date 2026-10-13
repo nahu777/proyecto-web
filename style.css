@@ -1,0 +1,277 @@
+body{
+    background-color: rgb(143, 7, 7);
+}
+p{ 
+    font-family: 'Lora', Garamond, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-align: justify; 
+    letter-spacing: 1px;
+
+}
+h1{
+   background-color: rgb(143, 7, 7);
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 2.8rem;
+    color: #1a1a1a; /* Oscuro, como hierro viejo */
+    text-shadow: 0 0 10px rgba(27, 24, 24, 0.6); /* Destello rojo sutil */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    letter-spacing: 4;
+    text-shadow: 0 0 10px rgba(27, 24, 24, 0.6);
+    color: #f0f0f0; 
+}
+.caja-actividad2{
+    background-color: #12161a;
+     border: 3px solid #1a1a1a;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 680px;
+    border-radius: 6px;
+}
+.img-guts2{
+    display: block;
+    margin: 25px auto;
+    width: 100p;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.caja-actividad{
+    background-color: #12161a;
+    border: 3px solid #1a1a1a;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 680px;
+    border-radius: 6px;
+}
+.img-guts{
+    display: block;
+    margin: 25px auto;
+    width: 100p;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+li::marker {
+    color: #ffffff; 
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a:hover{
+    color: #e62424;
+    text-decoration: underline !important;
+    text-shadow: 0 0 px rgba(230, 36, 0.6);
+}
+.menu-Berserk{
+    background-color: #12161a;
+    border-bottom: 2px solid #990000;
+    padding: 10px 10;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.menu-Berserk ul li{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+
+}
+.menu-Berserk ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing:     1px;
+    padding: 8px 16px;
+}
+.menu-Berserk ul li a:hover {
+     color: #e62424;
+     background-color: rgba(255, 255, 255, 0.05);
+     border-radius: 4px;
+
+}
+.final{
+     background-color: #12161a;
+    border-bottom: 2px solid #990000;
+    padding: 10px 10;
+    margin-bottom: 30px;
+}
+.final ul li {
+    margin: 20px 0 ;
+}
+.oculto {
+    display: none;
+}
+#volverArriba{
+    display: none;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    color: #811b1b;
+    transition: all 0.5s ease;
+    background-color: #12161a;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 2px solid #990000;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img { 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 12px 16px;
+    border: 1px solid #990000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s, color 0.3s;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background-color: #990000;
+    color: #ffffff;
+}
+
+.carousel-button-prev {
+    left: 10px;
+}
+
+.carousel-button-next {
+    right: 10px;
+}
+
+.content-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.indicator.activo {
+    background-color: #e62424;
+    transform: scale(1.2);
+}
+#mi-formulario-desplegable {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #0d0f12;
+    border: 1px solid #990000;
+    border-radius: 6px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    text-align: left;
+}
+
+#formulario label {
+    color: #e0e0e0; 
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #12161a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    box-sizing: border-box; 
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+    outline: none;
+    border-color: #e62424; 
+}
+
+
+#formulario button[type="submit"],
+#formulario input[type="submit"] {
+    background-color: #990000;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+#formulario button[type="submit"]:hover,
+#formulario input[type="submit"]:hover {
+    background-color: #e62424;
+}
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e62424;
+}
