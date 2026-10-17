@@ -62,6 +62,47 @@ h2{
     border-radius: 4px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+/* Contenedor centrado en la página */
+.contenedor-tooltip {
+  position: relative;
+  display: block;        /* Para que ocupe su propia línea */
+  margin: 25px auto;     /* 'auto' a los lados centra el contenedor en la pantalla */
+  width: fit-content;    /* Se ajusta exacto al ancho de la imagen */
+  text-align: center;
+}
+
+/* El tooltip flotante e interactivo (Oculto por defecto) */
+.info-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el cartel justo en el medio de la imagen */
+  
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #990000;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  
+  /* Oculto al inicio */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Aparece al pasar el mouse por encima */
+.contenedor-tooltip:hover .info-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+  
+
 li::marker {
     color: #ffffff; 
 }
